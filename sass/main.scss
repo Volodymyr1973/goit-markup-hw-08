@@ -1,0 +1,32 @@
+@import './base/normalize';
+@import './base/fonts';
+@import './utils/var';
+@import './utils/variables';
+@import './base/common';
+@import './base/reset';
+@import './utils/hidden';
+@import './utils/placeholders';
+@import './utils/mixin';
+
+@import './components/section';
+@import './components/container';
+@import './components/title';
+@import './components/link';
+@import './components/lists';
+@import './components/btn';
+@import './components/modal';
+
+@import './layout/header';
+@import './layout/logo';
+@import './layout/header-contact';
+@import './layout/hero';
+@import './layout/work';
+@import './layout/projects';
+@import './layout/team';
+@import './layout/client';
+@import './layout/footer';
+@import './layout/address';
+@import './layout/footer-card';
+@import './layout/footer-form';
+@import './layout/portfolio-btn';
+@import './layout/portfolio-card';

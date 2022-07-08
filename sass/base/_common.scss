@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-family: $primaryFont;
+}
+
+body {
+  width: 100%;
+  font-family: $primaryFont;
+  font-style: normal;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}

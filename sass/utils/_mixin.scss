@@ -1,0 +1,44 @@
+@mixin buttonAction($butt, $hover, $focus) {
+  .btn {
+    background-color: $butt;
+    &:hover {
+      background-color: $hover;
+    }
+    &:focus {
+      background-color: $focus;
+    }
+  }
+}
+
+@mixin mainFlex($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin hoverAction($colorText, $colorBg) {
+  color: $colorText;
+  background-color: $colorBg;
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
