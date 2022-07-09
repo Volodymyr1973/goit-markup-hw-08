@@ -1,3 +1,46 @@
+.projects {
+  display: none;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+// .projects__title
+
+.projects__title {
+}
+
+// .projects__lists
+
+.projects__lists {
+}
+
+// .projects__item
+
+.projects__item {
+}
+
+// .projects__link
+
+.projects__link {
+}
+
+// .projects__label
+
+.projects__label {
+}
+
+// .projects__photo
+
+.projects__photo {
+}
+
+// .projects__text
+
+.projects__text {
+}
+
 // .projects {
 //   background-color: #ffffff;
 //   padding: 94px 0;

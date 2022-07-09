@@ -11,6 +11,8 @@
 // .header__lists
 
 .header__lists {
+  display: none;
+
   @include mobile {
     display: none;
   }

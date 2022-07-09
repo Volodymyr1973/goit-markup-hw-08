@@ -6,6 +6,8 @@
 // .header-contact__lists
 
 .header-contact__lists {
+  display: none;
+
   @include mobile {
     display: none;
   }
