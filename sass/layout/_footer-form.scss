@@ -1,5 +1,70 @@
 // Форма футера
 
+.footer-form {
+}
+
+// .footer-form_wrapper
+
+.footer-form__wrapper {
+}
+
+// .footer-form__title
+
+.footer-form__title {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+// .footer-form__main
+
+.footer-form__main {
+  display: block;
+  text-align: center;
+}
+
+// .footer-form__label
+
+.footer-form__label {
+}
+
+// .footer-form__input-mail
+
+.footer-form__input-mail {
+  display: block;
+  padding: 15px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+// .footer-form__btn
+
+.footer-form__btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+// .footer-form__btn-text
+
+.footer-form__btn-text {
+}
+
+// .footer-form__btn-icon
+
+.footer-form__btn-icon {
+}
+
 // .footer-form__title {
 //   margin-top: 12px;
 //   margin-bottom: 20px;

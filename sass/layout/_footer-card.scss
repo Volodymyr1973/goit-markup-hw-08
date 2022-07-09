@@ -1,5 +1,93 @@
 // Ссылки в футере на соц.сети
 
+.footer-card {
+  margin: 60px auto;
+
+  @include mobile {
+    margin: 60px auto;
+  }
+}
+
+// .footer-card__title
+
+.footer-card__title {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @include mobile {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+}
+
+// .footer-card__lists
+
+.footer-card__lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// .footer-card__item
+
+.footer-card__item:not(:last-child) {
+  margin-right: 10px;
+
+  @include mobile {
+    margin-right: 10px;
+  }
+}
+
+// .footer-card__link
+
+.footer-card__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+  @include mobile {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+  }
+
+  // .footer-card__icon
+
+  .footer-card__icon {
+    fill: #ffffff;
+  }
+}
 // .footer-card__title {
 //   margin-top: 12px;
 //   margin-bottom: 20px;

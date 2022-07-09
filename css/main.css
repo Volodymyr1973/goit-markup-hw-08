@@ -243,6 +243,10 @@ img {
   }
 }
 
+.title {
+  text-align: center;
+}
+
 .link {
   text-decoration: none;
   font-style: normal;
@@ -795,4 +799,117 @@ img {
 }
 .address__link:hover, .address__link:focus {
   color: #2196f3;
+}
+
+.footer-card {
+  margin: 60px auto;
+}
+@media screen and (min-width: 480px) {
+  .footer-card {
+    margin: 60px auto;
+  }
+}
+
+.footer-card__title {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .footer-card__title {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+}
+
+.footer-card__lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-card__lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer-card__item:not(:last-child) {
+  margin-right: 10px;
+}
+@media screen and (min-width: 480px) {
+  .footer-card__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-card__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-card__link:hover, .footer-card__link:focus {
+  background-color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .footer-card__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .footer-card__link:hover, .footer-card__link:focus {
+    background-color: #2196f3;
+  }
+}
+.footer-card__link .footer-card__icon {
+  fill: #ffffff;
+}
+
+.footer-form__title {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-form__main {
+  display: block;
+  text-align: center;
+}
+
+.footer-form__input-mail {
+  display: block;
+  padding: 15px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-form__btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
