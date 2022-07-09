@@ -1,5 +1,49 @@
 // Адрес
 
+.footer-address {
+  text-align: center;
+}
+
+.address {
+}
+// .address__text
+
+.address__text {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+// .address__lists
+
+.address__lists {
+}
+
+// .address__item
+
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+// .address__link
+
+.address__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 // .address__item {
 //   margin-top: 12px;
 // }

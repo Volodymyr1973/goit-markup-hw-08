@@ -1,3 +1,99 @@
+.client {
+}
+
+// .client__title
+
+.client__title {
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  @include mobile {
+    margin-bottom: 30px;
+    color: #212121;
+  }
+}
+
+// .client__lists
+
+.client__lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+// .client__item
+
+.client__item {
+  width: calc((100% - 30px) / 2);
+  box-sizing: border-box;
+
+  @include mobile {
+    width: calc((100% - 30px) / 2);
+    box-sizing: border-box;
+  }
+}
+
+// .client__link
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+  &:hover .client__icon,
+  &:focus .client__icon {
+    fill: #2196f3;
+  }
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+    &:hover .client__icon,
+    &:focus .client__icon {
+      fill: #2196f3;
+    }
+  }
+}
+
+// .client__icon
+
+.client__icon {
+  fill: #afb1b8;
+}
+
 // .client__lists {
 //   display: flex;
 //   gap: 30px;
