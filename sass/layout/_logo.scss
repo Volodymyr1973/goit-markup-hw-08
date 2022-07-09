@@ -39,8 +39,19 @@
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #ffffff;
+
+  @include mobile {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+}
+
+.logo:hover,
+.logo:focus,
+.logo__bottom:hover,
+.logo__bottom:focus {
+  color: #2196f3;
 }
 
 // .logo {

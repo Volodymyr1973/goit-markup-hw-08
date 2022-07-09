@@ -306,6 +306,19 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+@media screen and (min-width: 480px) {
+  .logo__bottom {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+}
+
+.logo:hover,
+.logo:focus,
+.logo__bottom:hover,
+.logo__bottom:focus {
+  color: #2196f3;
+}
 
 /* -----Контакты хедера----- */
 .header-contact__lists {
@@ -779,4 +792,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.address__link:hover, .address__link:focus {
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
