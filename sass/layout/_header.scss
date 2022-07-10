@@ -1,11 +1,6 @@
 .header {
-}
-
-.container {
-}
-// .header__nav
-
-.header__nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 // .header__lists
@@ -16,32 +11,6 @@
   @include mobile {
     display: none;
   }
-}
-
-// .header__item
-
-.header__item {
-}
-
-// .header__link
-
-.header__link {
-}
-
-// .header__link--current
-
-.header__link--current {
-}
-
-.logo {
-  // .logo__web
-
-  &__web {
-  }
-}
-.link {
-}
-.lists {
 }
 
 // .header {

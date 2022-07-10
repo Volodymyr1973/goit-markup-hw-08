@@ -27,10 +27,10 @@
         <nav class="header__nav">
           <!--Логотип-->
           <a href="./" class="logo link" lang="en"><span class="logo__web">Web</span>Studio</a>
-          <button class="button header__btn">
+          <button class="button header__btn" data-menu-button>
             <svg class="header__icon" width="40" height="40">
-              <use class="header__icon--open" href=""></use>
-              <use class="header__icon--close" href=""></use>
+              <use class="header__icon--open" href="./images/icons.svg#icon-menu_40px"></use>
+              <use class="header__icon--close" href="./images/icons.svg#icon-close_40px"></use>
             </svg>
           </button>
           <!-- Ссылки на страницы -->
@@ -528,7 +528,28 @@
         </button>
       </div>
     </div>
-
+    <!-- Выпадающее меню мобильного -->
+    <div class="mobile is-open" data-menu>
+      <ul class="mobile__lists">
+        <li class="mobile__item"><a class="mobile__link current" href="">Студия</a></li>
+        <li class="mobile__item"><a class="mobile__link" href="">Портфолио</a></li>
+        <li class="mobile__item"><a class="mobile__link" href="">Контакты</a></li>
+      </ul>
+      <ul class="mobile-contact__list">
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social__list">
+        <li class="mobile-social__item"><a class="mobile-social__link" href="">Instagram</a></li>
+        <li class="mobile-social__item"><a class="mobile-social__link" href="">Twitter</a></li>
+        <li class="mobile-social__item"><a class="mobile-social__link" href="">Facebook</a></li>
+        <li class="mobile-social__item"><a class="mobile-social__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

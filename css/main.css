@@ -262,6 +262,144 @@ img {
   cursor: pointer;
 }
 
+.header__btn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 10;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+}
+.header__btn.is-open .header__icon--close {
+  opacity: 0;
+}
+.header__btn.is-open .header__icon--open {
+  opacity: 1;
+}
+.header__btn .header__icon--close {
+  opacity: 1;
+}
+.header__btn .header__icon--open {
+  opacity: 0;
+}
+.header__btn:hover .header__icon--close, .header__btn:hover .header__icon--open {
+  fill: #2196f3;
+}
+
+.header__icon--open,
+.header__icon--close {
+  fill: #212121;
+}
+
+.mobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  padding: 48px 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mobile.is-open {
+  display: block;
+}
+
+.mobile__lists {
+  border-top: 1px solid #ececec;
+  margin-bottom: 300px;
+}
+
+.mobile__item:not(last-child) {
+  margin-bottom: 35px;
+}
+
+.mobile__link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile__link.current {
+  color: #2196f3;
+}
+
+.mobile__link:hover {
+  border-bottom: 4px solid #2196f3;
+  color: #2196f3;
+  border-radius: 2px;
+}
+
+.mobile-contact__item {
+  height: 34px;
+}
+
+.mobile-contact__item:not(last-child) {
+  margin-bottom: 30px;
+}
+
+.mobile-contact__link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mobile-contact__link:hover, .mobile-contact__link:focus {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-social__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mobile-social__item:not(:first-child) {
+  padding-left: 10px;
+}
+.mobile-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__link {
+  height: 22px;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-social__item:hover,
+.mobile-social__item:focus {
+  border-bottom: 1px solid #2196f3;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
 .header__lists {
   display: none;
 }
