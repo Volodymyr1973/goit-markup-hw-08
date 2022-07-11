@@ -18,6 +18,11 @@
     margin-bottom: 30px;
     color: #212121;
   }
+
+  @include tablet {
+    margin-bottom: 30px;
+    color: #212121;
+  }
 }
 
 // .client__lists
@@ -26,6 +31,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
   @include mobile {
     display: flex;
