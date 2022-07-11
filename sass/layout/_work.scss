@@ -21,6 +21,10 @@
 .work__item {
 }
 
+.work__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 // .work__icon
 
 .work__icon {
@@ -89,10 +93,6 @@
 
   color: #757575;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
   @include mobile {
     font-family: $primaryFont;
     font-style: normal;
@@ -102,10 +102,6 @@
     letter-spacing: 0.03em;
 
     color: #757575;
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
   }
 }
 
