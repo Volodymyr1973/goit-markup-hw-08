@@ -78,6 +78,11 @@
 
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
+
+  @media screen and(max-width: 390px) {
+    padding: 40px 25px;
+    font-size: 14px;
+  }
 }
 
 .portfolio__link:hover .portfolio__photo-text,
