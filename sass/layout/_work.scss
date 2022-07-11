@@ -14,15 +14,27 @@
 // .work__lists
 
 .work__lists {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 // .work__item
 
 .work__item {
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .work__item:not(:last-child) {
   margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 // .work__icon

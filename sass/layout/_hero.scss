@@ -22,6 +22,32 @@
       background-repeat: no-repeat;
     }
   }
+
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/tablet/hero768.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/tablet/Hero768-2x.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/desktop/hero1200.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/desktop/hero1200-2x.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .hero .container {
@@ -29,6 +55,11 @@
   padding-bottom: 118px;
 
   @include mobile {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @include tablet {
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -64,15 +95,28 @@
 
     color: #ffffff;
   }
+
+  @include tablet {
+    margin-bottom: 30px;
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
 }
 
 // .hero__btn
 
 .hero__btn {
   display: block;
-  width: 200px;
-  height: 50px;
   margin: 0 auto;
+  padding: 10px 32px;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -87,11 +131,15 @@
 
   color: #ffffff;
 
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+
   @include mobile {
     display: block;
-    width: 200px;
-    height: 50px;
     margin: 0 auto;
+    padding: 10px 32px;
 
     background-color: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -104,12 +152,12 @@
     letter-spacing: 0.06em;
 
     color: #ffffff;
-  }
-}
 
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: #188ce8;
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
 }
 
 // .hero {

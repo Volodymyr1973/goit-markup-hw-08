@@ -4,6 +4,14 @@
   @include mobile {
     display: none;
   }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+  }
 }
 
 // .projects__title

@@ -32,6 +32,10 @@
   &:hover .header__icon--open {
     fill: #2196f3;
   }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 // .header__icon
