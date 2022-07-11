@@ -7,19 +7,19 @@
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 
-.backdrop.is-hidden .modal {
-  opacity: 0;
-}
+  &.is-hidden .modal {
+    opacity: 0;
+  }
 
-.backdrop .modal {
-  opacity: 1;
+  & .modal {
+    opacity: 1;
+  }
 }
 
 .modal {
@@ -49,8 +49,6 @@
   color: #212121;
 }
 
-.modal-form {
-}
 
 // .modal-form__wrapper
 
@@ -154,14 +152,10 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
-
   letter-spacing: 0.03em;
 
   color: #757575;
 }
-
-// .modal-form__input-checkbox
 
 // .modal-form__checkbox
 

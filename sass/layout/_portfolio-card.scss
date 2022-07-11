@@ -1,5 +1,76 @@
 // Портфолио карточки
 
+.portfolio {
+}
+
+// .portfolio__lists
+
+.portfolio__lists {
+}
+
+// .portfolio__item
+
+.portfolio__item {
+  max-width: 450px;
+  height: 404px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+
+  &:not(last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+// .portfolio__link
+
+.portfolio__link {
+}
+
+// .portfolio__photo-task
+
+.portfolio__photo-task {
+  position: relative;
+  width: 100%;
+}
+
+// .portfolio__photo
+
+.portfolio__photo {
+}
+
+// .portfolio__photo-text
+
+.portfolio__photo-text {
+  position: absolute;
+
+  height: 294px;
+  left: 0;
+  top: 0;
+  padding: 75px 25px;
+  overflow: hidden;
+  opacity: 0;
+
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  color: #ffffff;
+}
+
+// .portfolio__desc
+
+.portfolio__desc {
+}
+
+// .portfolio__title
+
+.portfolio__title {
+}
+
+// .portfolio__text
+
+.portfolio__text {
+}
+
 // .portfolio__lists {
 //   display: flex;
 //   flex-wrap: wrap;

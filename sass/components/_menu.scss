@@ -11,19 +11,19 @@
   background-color: transparent;
 
   &.is-open .header__icon--close {
-    opacity: 0;
+    opacity: 1;
   }
 
   &.is-open .header__icon--open {
-    opacity: 1;
+    opacity: 0;
   }
 
   & .header__icon--close {
-    opacity: 1;
+    opacity: 0;
   }
 
   & .header__icon--open {
-    opacity: 0;
+    opacity: 1;
   }
 
   //   &:focus .header__icon--close,
