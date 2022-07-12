@@ -38,7 +38,7 @@
     gap: 30px;
   }
 
-  @include mobile {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -53,6 +53,11 @@
 
   @include mobile {
     width: calc((100% - 30px) / 2);
+    box-sizing: border-box;
+  }
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
     box-sizing: border-box;
   }
 }

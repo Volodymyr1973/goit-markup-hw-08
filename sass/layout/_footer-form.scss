@@ -6,6 +6,10 @@
 // .footer-form_wrapper
 
 .footer-form__wrapper {
+  @include tablet {
+    width: 450px;
+    margin: 0 100px;
+  }
 }
 
 // .footer-form__title
@@ -26,6 +30,11 @@
     margin-bottom: 20px;
     color: #ffffff;
   }
+
+  @include tablet {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
 }
 
 // .footer-form__main
@@ -34,6 +43,10 @@
   text-align: center;
 
   @include mobile {
+    text-align: center;
+  }
+
+  @include tablet {
     text-align: center;
   }
 }
@@ -51,6 +64,17 @@
   outline: none;
 
   @include mobile {
+    width: 100%;
+    margin: 0 auto 20px;
+    padding: 15px;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  @include tablet {
     width: 100%;
     margin: 0 auto 20px;
     padding: 15px;
@@ -96,6 +120,23 @@
       background-color: #188ce8;
     }
   }
+
+  @include tablet {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 10px 29px;
+
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
 }
 
 // .footer-form__btn-text
@@ -105,6 +146,10 @@
   color: #ffffff;
 
   @include mobile {
+    margin-right: 10px;
+  }
+
+  @include tablet {
     margin-right: 10px;
   }
 }

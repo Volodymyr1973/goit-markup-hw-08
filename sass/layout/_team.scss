@@ -58,6 +58,9 @@
   }
 
   @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -159,6 +162,14 @@
       margin-right: 10px;
     }
   }
+
+  @include tablet {
+    margin-bottom: 24px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 }
 
 // .team-card__link
@@ -183,6 +194,26 @@
   }
 
   @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &:hover .team-card__icon,
+    &:focus .team-card__icon {
+      fill: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+  }
+
+  @include tablet {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -2,6 +2,16 @@
 
 .footer-address {
   text-align: center;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include tablet {
+    text-align: center;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
 }
 
 .address {
@@ -19,6 +29,16 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  @include mobile {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  @include tablet {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
 }
 // .address__lists
 
@@ -46,6 +66,38 @@
   &:hover,
   &:focus {
     color: #2196f3;
+  }
+
+  @include mobile {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+
+  @include tablet {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
   }
 }
 
