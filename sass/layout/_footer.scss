@@ -1,16 +1,6 @@
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
-
-  @include mobile {
-    padding: 60px 0;
-    background-color: #2f303a;
-  }
-
-  @include tablet {
-    padding: 60px 0;
-    background-color: #2f303a;
-  }
 }
 
 .footer .container {
@@ -19,14 +9,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+  }
 }
-
-// .footer {
-//   padding: 60px 0;
-//   background-color: #2f303a;
-// }
-
-// .footer .container {
-//   display: flex;
-//   justify-content: space-between;
-// }

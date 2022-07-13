@@ -10,6 +10,11 @@
     width: 450px;
     margin: 0 100px;
   }
+
+  @include desktop {
+    width: 570px;
+    margin: 0;
+  }
 }
 
 // .footer-form__title
@@ -26,14 +31,9 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  @include mobile {
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
-
-  @include tablet {
-    margin-bottom: 20px;
-    color: #ffffff;
+  @include desktop {
+    margin-top: 12px;
+    text-align: left;
   }
 }
 
@@ -42,12 +42,10 @@
 .footer-form__main {
   text-align: center;
 
-  @include mobile {
-    text-align: center;
-  }
-
-  @include tablet {
-    text-align: center;
+  @include desktop {
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
 }
 
@@ -57,32 +55,29 @@
   width: 100%;
   margin: 0 auto 20px;
   padding: 15px;
-  background-color: #2f303a;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #ffffff;
   border-radius: 4px;
   outline: none;
+  background-color: #2f303a;
+  color: #ffffff;
 
-  @include mobile {
-    width: 100%;
-    margin: 0 auto 20px;
-    padding: 15px;
-    background-color: #2f303a;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-    border-radius: 4px;
-    outline: none;
+  &::placeholder {
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
   }
 
-  @include tablet {
-    width: 100%;
-    margin: 0 auto 20px;
+  @include desktop {
+    width: 360px;
+    height: 50px;
+    margin-bottom: 0;
     padding: 15px;
-    background-color: #2f303a;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-    border-radius: 4px;
-    outline: none;
   }
 }
 
@@ -98,44 +93,21 @@
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: #188ce8;
   }
 
-  @include mobile {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  @include desktop {
+    width: 200px;
     height: 50px;
-    padding: 10px 29px;
-
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    &:hover,
-    &:focus {
-      background-color: #188ce8;
-    }
-  }
-
-  @include tablet {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    padding: 10px 29px;
-
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    &:hover,
-    &:focus {
-      background-color: #188ce8;
-    }
+    margin-left: 10px;
   }
 }
 
@@ -145,12 +117,12 @@
   margin-right: 10px;
   color: #ffffff;
 
-  @include mobile {
+  @include desktop {
     margin-right: 10px;
-  }
-
-  @include tablet {
-    margin-right: 10px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
   }
 }
 
@@ -160,78 +132,6 @@
   fill: #ffffff;
 }
 
-// .footer-form__title {
-//   margin-top: 12px;
-//   margin-bottom: 20px;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-
-//   color: #ffffff;
-// }
-// .footer-form__main {
-//   @include mainFlex(flex, center, center);
-//   // display: f
-//   // justify-content: cen
-//   // align-items: cent;
-// }
-
-// .footer-form__input-mail {
-//   width: 360px;
-//   height: 50px;
-//   padding: 15px 16px;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
-//   outline: none;
-//   background-color: #2f303a;
-//   color: #ffffff;
-
-//   &::placeholder {
-//     align-items: center;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.25;
-//     display: flex;
-//     letter-spacing: 0.03em;
-
-//     color: rgba(255, 255, 255, 0.6);
-//   }
-// }
-
-// .footer-form__btn {
-//   @include mainFlex(flex, center, center);
-//   // display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-//   width: 200px;
-//   height: 50px;
-//   margin-left: 10px;
-
-//   background: #2196f3;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border: none;
-//   border-radius: 4px;
-
-//   cursor: pointer;
-
-//   outline: none;
-
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     background-color: #188ce8;
-//   }
-// }
-
 // .footer-form__btn-text {
-//   margin-right: 10px;
-//   letter-spacing: 0.06em;
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.88;
-//   color: #ffffff;
+//
 // }

@@ -123,16 +123,57 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  @include mobile {
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+  }
+
+  @include tablet {
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+  }
 }
 
 // .modal-form__wrapper
 
-.modal-form__wrapper:hover ~ .modal-form__text,
-.modal-form__wrapper:focus ~ .modal-form__text,
-.modal-form__wrapper:hover ~ .modal-form__icon,
-.modal-form__wrapper:focus ~ .modal-form__icon,
-.modal-form__wrapper:hover ~ svg,
-.modal-form__wrapper:focus ~ svg {
+.modal-form__wrapper:hover .modal-form__text,
+.modal-form__wrapper:focus .modal-form__text {
+  color: #2196f3;
+
+  @include mobile {
+    color: #2196f3;
+  }
+
+  @include tablet {
+    color: currentColor;
+  }
+
+  @include desktop {
+    color: currentColor;
+  }
+}
+
+.modal-form__wrapper:hover input,
+.modal-form__wrapper:focus input,
+.modal-form__wrapper:hover svg,
+.modal-form__wrapper:focus svg {
   border-color: #2196f3;
   color: #2196f3;
   fill: #2196f3;
@@ -140,6 +181,14 @@
 
 .modal-form__wrapper:not(:last-child) {
   margin-bottom: 10px;
+
+  @include mobile {
+    margin-bottom: 10px;
+  }
+
+  @include desktop {
+    margin-bottom: 10px;
+  }
 }
 
 // .modal-form__text
@@ -158,12 +207,6 @@
 
 .modal-form__input-icon {
   position: relative;
-
-  // // &:hover .modal-form__icon,
-  // // &:focus .modal-form__icon,
-  // // &active .modal-form__icon {
-  // //   fill: #2196f3;
-  // }
 }
 
 .modal-form__input-icon input {
@@ -173,11 +216,6 @@
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
-  // &:hover,
-  // &:focus {
-  //   border-color: #2196f3;
-  // }
 }
 
 // .modal-form__icon

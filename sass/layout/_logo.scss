@@ -9,17 +9,27 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include mobile {
-    color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 
-  @include tablet {
-    margin-right: 85px;
+  @include desktop {
+    margin-right: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: $secondoryFont;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
   }
 }
 
@@ -28,11 +38,15 @@
 .logo__web {
   display: inline-block;
   color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include mobile {
-    color: #2196f3;
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
   }
 }
+
+// // Лого футера
 
 .logo__bottom {
   margin-bottom: 20px;
@@ -40,67 +54,24 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
 
-  @include mobile {
-    margin-bottom: 20px;
-    color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+
+  @include desktop {
+    display: inline-block;
+    text-align: left;
+    font-family: $secondoryFont;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
   }
 }
-
-.logo:hover,
-.logo:focus,
-.logo__bottom:hover,
-.logo__bottom:focus {
-  color: #2196f3;
-}
-
-// .logo {
-//   margin-right: 93px;
-//   margin-top: 25px;
-//   margin-bottom: 25px;
-//   font-family: $secondoryFont;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   color: var(--title-text-color);
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
-
-// .logo__web {
-//   color: var(--accent-color);
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   &:focus,
-//   &:hover {
-//     color: var(--accent-color);
-//   }
-// }
-
-// // Лого футера
-
-// .logo__bottom {
-//   display: inline-block;
-//   margin-bottom: 20px;
-//   font-family: $secondoryFont;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   color: #ffffff;
-
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }

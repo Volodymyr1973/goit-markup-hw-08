@@ -1,5 +1,9 @@
-.portfolio {
+.portfolio-main {
+  background-color: #ffffff;
 }
+
+// // Портфолио кнопки
+
 // .portfolio__btn-lists
 
 .portfolio__btn-lists {
@@ -7,22 +11,23 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 
-  @include mobile {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
-
   @include tablet {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
   }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 // .portfolio__btn-item
 
-.portfolio__btn-item {
+.portfolio__btn-item + .portfolio__btn-item {
+  @include desktop {
+    margin-left: 8px;
+  }
 }
 
 // .portfolio__btn
@@ -32,9 +37,10 @@
   border-color: transparent;
   padding: 6px 20px;
   margin: 7px 4px;
-  background-color: #f5f4fa;
+
   border-radius: 4px;
   outline: none;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -43,7 +49,11 @@
   text-align: center;
   letter-spacing: 0.03em;
 
+  background-color: #f5f4fa;
   color: #212121;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -52,56 +62,8 @@
     color: #ffffff;
   }
 
-  @include mobile {
-    display: inline-block;
-    border-color: transparent;
-    padding: 6px 20px;
-    margin: 7px 4px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    outline: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;
-
-    &:hover,
-    &:focus {
-      background-color: #2196f3;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-      color: #ffffff;
-    }
-  }
-
-  @include tablet {
-    display: inline-block;
-    border-color: transparent;
-    padding: 6px 20px;
-    margin: 7px 4px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    outline: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;
-
-    &:hover,
-    &:focus {
-      background-color: #2196f3;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-      color: #ffffff;
-    }
+  @include desktop {
+    padding: 6px 22px;
   }
 }
 
@@ -122,110 +84,14 @@
 
   color: #ffffff;
 
-  @include mobile {
-    background-color: #2196f3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    outline: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
+  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  //   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // &:hover,
+  // &:focus {
+  //   color: var(--title-text-color);
+  //   background-color: #f5f4fa;
 
-    color: #ffffff;
-  }
-
-  @include tablet {
-    background-color: #2196f3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    outline: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #ffffff;
+  @include desktop {
+    padding: 6px 22px;
   }
 }
-
-// .portfolio-main {
-//   background-color: #ffffff;
-// }
-
-// // Портфолио кнопки
-
-// .portfolio__btn-lists {
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 50px;
-// }
-
-// .portfolio__btn-item + .portfolio__btn-item {
-//   margin-left: 8px;
-// }
-
-// .portfolio__btn {
-//   @extend %btnPortfolio;
-
-//   // display: inline-block;
-//   // padding: 6px 22px;
-//   // border: none;
-//   // border-radius: 4px;
-
-//   // font-weight: 500;
-//   // font-size: 16px;
-//   // line-height: 1.62;
-//   // text-align: center;
-//   // letter-spacing: 0.03em;
-
-//   color: var(--title-text-color);
-//   background-color: #f5f4fa;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     @include hoverAction(#ffffff, #2196f3);
-//     // color: #ffffff;
-//     // background-color: var(--accent-color);
-//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//     border-radius: 4px;
-//   }
-// }
-
-// .portfolio__btn--active {
-//   @extend %btnPortfolio;
-//   // display: inline-block;
-//   // padding: 6px 22px;
-//   // border: none;
-//   // border-radius: 4px;
-
-//   // font-weight: 500;
-//   // font-size: 16px;
-//   // line-height: 1.62;
-//   // text-align: center;
-//   // letter-spacing: 0.03em;
-
-//   @include hoverAction(#ffffff, #2196f3);
-//   // color: #ffffff;
-//   // background-color: var(--accent-color);
-//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-//   // Оставил на всякий случай, хотя это, по логике, часть не нужна
-//   // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//   //   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   // &:hover,
-//   // &:focus {
-//   //   color: var(--title-text-color);
-//   //   background-color: #f5f4fa;
-//   //   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//   //   border-radius: 4px;
-//   // }
-// }

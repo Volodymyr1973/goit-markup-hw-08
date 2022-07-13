@@ -1,14 +1,9 @@
 .work {
-}
-
-// .work__pretitle
-
-.work__pretitle {
-}
-
-// .work__div
-
-.work__div {
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 0;
+    background-color: #ffffff;
+  }
 }
 
 // .work__lists
@@ -19,6 +14,12 @@
     flex-wrap: wrap;
     gap: 30px;
   }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 }
 
 // .work__item
@@ -26,6 +27,10 @@
 .work__item {
   @include tablet {
     flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -49,23 +54,16 @@
   background: #f5f4fa;
   border-radius: 4px;
 
-  @include mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    margin-bottom: 30px;
-
-    background: #f5f4fa;
-    border-radius: 4px;
-  }
-
   @include tablet {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f5f4fa;
     border-radius: 4px;
+  }
+
+  @include desktop {
+    padding: 25px 100px;
   }
 }
 
@@ -78,32 +76,12 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: #212121;
-
-  @include mobile {
-    margin-bottom: 10px;
-
-    font-family: $primaryFont;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #212121;
-  }
-  @include tablet {
-    font-family: $primaryFont;
-    text-align: center;
-    text-transform: uppercase;
-  }
 }
 
 // .work__position
@@ -115,63 +93,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: #757575;
-
-  @include mobile {
-    font-family: $primaryFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: #757575;
-  }
-
-  @include tablet {
-    font-family: $primaryFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: #757575;
-  }
 }
-
-// .work {
-//   padding-top: 94px;
-//   background-color: #ffffff;
-// }
-
-// .work__lists {
-//   display: flex;
-//   gap: 30px;
-// }
-
-// .work__item {
-//   flex-basis: calc((100% - 90px) / 4);
-// }
-
-// .work__icon {
-//   padding: 25px 100px;
-//   margin-bottom: 30px;
-//   border-radius: 4px;
-//   background-color: #f5f4fa;
-// }
-
-// .work__title {
-//   margin-bottom: 10px;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-//   color: var(--title-text-color);
-// }
-// .work__position {
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-// }
