@@ -14,7 +14,8 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji';
 }
 
 hr {
@@ -35,7 +36,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 1em;
 }
 
@@ -81,9 +82,9 @@ select {
 }
 
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -113,7 +114,7 @@ progress {
   height: auto;
 }
 
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -128,31 +129,36 @@ progress {
 }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
-  src: url("../../fonts/Raleway-Bold.woff2") format("woff2"), url("../../fonts/Raleway-Bold.woff") format("woff"), url("../../fonts/Raleway-Bold.ttf") format("truetype");
+  font-family: 'Raleway', sans-serif;
+  src: url('../../fonts/Raleway-Bold.woff2') format('woff2'), url('../../fonts/Raleway-Bold.woff') format('woff'),
+    url('../../fonts/Raleway-Bold.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../../fonts/Roboto-Black.woff") format("woff"), url("../../fonts/Roboto-Black.woff2") format("woff2"), url("../../fonts/Roboto-Black.ttf") format("truetype");
+  font-family: 'Roboto', sans-serif;
+  src: url('../../fonts/Roboto-Black.woff') format('woff'), url('../../fonts/Roboto-Black.woff2') format('woff2'),
+    url('../../fonts/Roboto-Black.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../../fonts/Roboto-Medium.woff") format("woff"), url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.ttf") format("truetype");
+  font-family: 'Roboto', sans-serif;
+  src: url('../../fonts/Roboto-Medium.woff') format('woff'), url('../../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../../fonts/Roboto-Medium.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../../fonts/Roboto-Regular.woff") format("woff"), url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: 'Roboto', sans-serif;
+  src: url('../../fonts/Roboto-Regular.woff') format('woff'), url('../../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../../fonts/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../../fonts/Roboto-Bold.woff") format("woff"), url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.ttf") format("truetype");
+  font-family: 'Roboto', sans-serif;
+  src: url('../../fonts/Roboto-Bold.woff') format('woff'), url('../../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../../fonts/Roboto-Bold.ttf') format('truetype');
 }
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bg-color: #e5e5e5;
-  --main-font: "Roboto", sans-serif;
+  --main-font: 'Roboto', sans-serif;
 }
 
 *,
@@ -163,12 +169,12 @@ progress {
 
 html {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: var(--primary-text-color);
   margin: 0;
@@ -306,7 +312,8 @@ img {
     padding: 40px;
     z-index: 20;
     border-radius: 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
     opacity: 1;
     transform: translate(-50%, -50%);
@@ -327,7 +334,8 @@ img {
     padding: 40px;
     z-index: 20;
     border-radius: 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
     opacity: 1;
     transform: translate(-50%, -50%);
@@ -349,7 +357,7 @@ img {
 
 .modal__main-title {
   margin-bottom: 12px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -369,7 +377,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .modal-form__wrapper:hover .modal-form__text,
-.modal-form__wrapper:focus .modal-form__text {
+  .modal-form__wrapper:focus .modal-form__text {
     color: currentColor;
   }
 }
@@ -426,7 +434,7 @@ img {
 
 .modal-form__text {
   margin-bottom: 4px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -486,7 +494,7 @@ input:focus + .modal-form__icon {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__area::placeholder {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -494,7 +502,8 @@ input:focus + .modal-form__icon {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-form__area:hover, .modal-form__area:focus {
+.modal-form__area:hover,
+.modal-form__area:focus {
   border-color: #2196f3;
 }
 @media screen and (min-width: 1200px) {
@@ -530,7 +539,7 @@ input:focus + .modal-form__icon {
 }
 
 .form-box__text {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -561,7 +570,8 @@ input:focus + .modal-form__icon {
   align-items: center;
   justify-content: center;
   border: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__input-checkbox:checked ~ .modal-form__checkbox {
   position: absolute;
@@ -571,7 +581,8 @@ input:focus + .modal-form__icon {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   opacity: 1;
 }
-.modal-form__input-checkbox:hover ~ .modal-form__checkbox, .modal-form__input-checkbox:focus ~ .modal-form__checkbox {
+.modal-form__input-checkbox:hover ~ .modal-form__checkbox,
+.modal-form__input-checkbox:focus ~ .modal-form__checkbox {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -585,7 +596,8 @@ input:focus + .modal-form__icon {
   align-items: center;
   justify-content: center;
   border: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__input-checkbox:checked ~ .modal-form__checkbox--none {
   position: absolute;
@@ -595,12 +607,13 @@ input:focus + .modal-form__icon {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   opacity: 0;
 }
-.modal-form__input-checkbox:hover ~ .modal-form__checkbox--none, .modal-form__input-checkbox:focus ~ .modal-form__checkbox--none {
+.modal-form__input-checkbox:hover ~ .modal-form__checkbox--none,
+.modal-form__input-checkbox:focus ~ .modal-form__checkbox--none {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-form__link {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -617,7 +630,7 @@ input:focus + .modal-form__icon {
 
 .modal-form__link-text {
   text-align: center;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -627,7 +640,8 @@ input:focus + .modal-form__icon {
   color: #2196f3;
   transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form__link-text:hover, .modal-form__link-text:focus {
+.modal-form__link-text:hover,
+.modal-form__link-text:focus {
   text-decoration: underline;
 }
 @media screen and (min-width: 1200px) {
@@ -640,7 +654,8 @@ input:focus + .modal-form__icon {
     color: #2196f3;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal-form__link-text:hover, .modal-form__link-text:focus {
+  .modal-form__link-text:hover,
+  .modal-form__link-text:focus {
     text-decoration: none;
     color: #188ce8;
   }
@@ -653,7 +668,7 @@ input:focus + .modal-form__icon {
   padding: 10px 55px;
   margin: 0 auto 30px;
   outline: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -667,7 +682,8 @@ input:focus + .modal-form__icon {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form__btn-submit:hover, .modal-form__btn-submit:focus {
+.modal-form__btn-submit:hover,
+.modal-form__btn-submit:focus {
   background-color: #188ce8;
 }
 
@@ -696,7 +712,8 @@ input:focus + .modal-form__icon {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form__btn--close:hover .modal-form__icon--close, .modal-form__btn--close:focus .modal-form__icon--close {
+.modal-form__btn--close:hover .modal-form__icon--close,
+.modal-form__btn--close:focus .modal-form__icon--close {
   fill: #2196f3;
 }
 
@@ -722,7 +739,8 @@ input:focus + .modal-form__icon {
 .header__btn .header__icon--open {
   opacity: 1;
 }
-.header__btn:hover .header__icon--close, .header__btn:hover .header__icon--open {
+.header__btn:hover .header__icon--close,
+.header__btn:hover .header__icon--open {
   fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
@@ -770,7 +788,7 @@ input:focus + .modal-form__icon {
 
 .mobile__link {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -801,7 +819,7 @@ input:focus + .modal-form__icon {
 
 .mobile-contact__link {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -810,7 +828,8 @@ input:focus + .modal-form__icon {
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-contact__link:hover, .mobile-contact__link:focus {
+.mobile-contact__link:hover,
+.mobile-contact__link:focus {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -821,7 +840,8 @@ input:focus + .modal-form__icon {
   .mobile-contact__link {
     font-size: 20px;
   }
-  .mobile-contact__link:hover, .mobile-contact__link:focus {
+  .mobile-contact__link:hover,
+  .mobile-contact__link:focus {
     font-size: 25px;
   }
 }
@@ -855,7 +875,7 @@ input:focus + .modal-form__icon {
 
 .mobile-social__link {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -963,7 +983,8 @@ input:focus + .modal-form__icon {
     color: var(--title-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header__link:hover, .header__link:focus {
+  .header__link:hover,
+  .header__link:focus {
     color: var(--accent-color);
   }
 }
@@ -972,7 +993,7 @@ input:focus + .modal-form__icon {
   color: var(--accent-color);
 }
 .header__link--current::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -986,7 +1007,7 @@ input:focus + .modal-form__icon {
   display: inline-block;
   margin-top: 16px;
   margin-bottom: 16px;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -995,7 +1016,8 @@ input:focus + .modal-form__icon {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo:hover, .logo:focus {
+.logo:hover,
+.logo:focus {
   color: var(--accent-color);
 }
 @media screen and (min-width: 1200px) {
@@ -1003,7 +1025,7 @@ input:focus + .modal-form__icon {
     margin-right: 0;
     margin-top: 25px;
     margin-bottom: 25px;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -1017,13 +1039,14 @@ input:focus + .modal-form__icon {
   color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo__web:focus, .logo__web:hover {
+.logo__web:focus,
+.logo__web:hover {
   color: var(--accent-color);
 }
 
 .logo__bottom {
   margin-bottom: 20px;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1033,14 +1056,15 @@ input:focus + .modal-form__icon {
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo__bottom:hover, .logo__bottom:focus {
+.logo__bottom:hover,
+.logo__bottom:focus {
   color: #2196f3;
 }
 @media screen and (min-width: 1200px) {
   .logo__bottom {
     display: inline-block;
     text-align: left;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -1089,7 +1113,7 @@ input:focus + .modal-form__icon {
 .header-contact__link {
   display: flex;
   align-items: center;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1099,10 +1123,12 @@ input:focus + .modal-form__icon {
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-contact__link:hover, .header-contact__link:focus {
+.header-contact__link:hover,
+.header-contact__link:focus {
   color: var(--accent-color);
 }
-.header-contact__link:hover .header-contact__pic, .header-contact__link:focus .header-contact__pic {
+.header-contact__link:hover .header-contact__pic,
+.header-contact__link:focus .header-contact__pic {
   fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
@@ -1117,10 +1143,12 @@ input:focus + .modal-form__icon {
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header-contact__link:hover, .header-contact__link:focus {
+  .header-contact__link:hover,
+  .header-contact__link:focus {
     color: var(--accent-color);
   }
-  .header-contact__link:hover .header-contact__pic, .header-contact__link:focus .header-contact__pic {
+  .header-contact__link:hover .header-contact__pic,
+  .header-contact__link:focus .header-contact__pic {
     fill: var(--accent-color);
   }
 }
@@ -1135,7 +1163,8 @@ input:focus + .modal-form__icon {
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header-contact__link:hover, .header-contact__link:focus {
+  .header-contact__link:hover,
+  .header-contact__link:focus {
     color: var(--accent-color);
   }
 }
@@ -1153,41 +1182,51 @@ input:focus + .modal-form__icon {
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/Header-img-480.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/mobile/Header-img-480.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/Header-img-480-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mobile/Header-img-480-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/Header-img-480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mobile/Header-img-480.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (min-resolution: 192dpi),
+  screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/Header-img-480-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mobile/Header-img-480-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tablet/hero768.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/Hero768-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tablet/Hero768-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1196,14 +1235,18 @@ input:focus + .modal-form__icon {
   .hero {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero1200.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/desktop/hero1200.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero1200-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/desktop/hero1200-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1225,7 +1268,7 @@ input:focus + .modal-form__icon {
 .hero__title {
   margin-bottom: 30px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -1265,7 +1308,8 @@ input:focus + .modal-form__icon {
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__btn:hover, .hero__btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: #188ce8;
 }
 
@@ -1338,7 +1382,7 @@ input:focus + .modal-form__icon {
 
 .work__title {
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1350,7 +1394,7 @@ input:focus + .modal-form__icon {
 }
 
 .work__position {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1392,7 +1436,8 @@ input:focus + .modal-form__icon {
 .projects__label {
   position: relative;
 }
-.projects__link:focus .projects__label, .projects__link:hover .projects__label {
+.projects__link:focus .projects__label,
+.projects__link:hover .projects__label {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1427,7 +1472,7 @@ input:focus + .modal-form__icon {
 
 .team__mean-title {
   margin-bottom: 30px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1497,7 +1542,7 @@ input:focus + .modal-form__icon {
 
 .team__title {
   margin-bottom: 10px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1509,7 +1554,7 @@ input:focus + .modal-form__icon {
 
 .team__text {
   margin-bottom: 16px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1539,10 +1584,12 @@ input:focus + .modal-form__icon {
   color: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-card__link:hover .team-card__icon, .team-card__link:focus .team-card__icon {
+.team-card__link:hover .team-card__icon,
+.team-card__link:focus .team-card__icon {
   fill: #ffffff;
 }
-.team-card__link:hover, .team-card__link:focus {
+.team-card__link:hover,
+.team-card__link:focus {
   background-color: #2196f3;
 }
 
@@ -1552,7 +1599,7 @@ input:focus + .modal-form__icon {
 
 .client__title {
   margin-bottom: 30px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1613,7 +1660,8 @@ input:focus + .modal-form__icon {
   color: #afb1b8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client__link:hover, .client__link:focus {
+.client__link:hover,
+.client__link:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   color: #2196f3;
@@ -1663,7 +1711,7 @@ input:focus + .modal-form__icon {
 .address__text {
   margin-top: 20px;
   margin-bottom: 8px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1696,7 +1744,7 @@ input:focus + .modal-form__icon {
 }
 
 .address__link {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1706,7 +1754,8 @@ input:focus + .modal-form__icon {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address__link:hover, .address__link:focus {
+.address__link:hover,
+.address__link:focus {
   color: #2196f3;
 }
 
@@ -1726,7 +1775,7 @@ input:focus + .modal-form__icon {
 
 .footer-card__title {
   margin-bottom: 20px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1770,7 +1819,8 @@ input:focus + .modal-form__icon {
   background-color: rgba(255, 255, 255, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-card__link:hover, .footer-card__link:focus {
+.footer-card__link:hover,
+.footer-card__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -1794,7 +1844,7 @@ input:focus + .modal-form__icon {
 
 .footer-form__title {
   margin-bottom: 20px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1863,7 +1913,8 @@ input:focus + .modal-form__icon {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-form__btn:hover, .footer-form__btn:focus {
+.footer-form__btn:hover,
+.footer-form__btn:focus {
   background-color: #188ce8;
 }
 @media screen and (min-width: 1200px) {
@@ -1927,7 +1978,7 @@ input:focus + .modal-form__icon {
   margin: 7px 4px;
   border-radius: 4px;
   outline: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1936,9 +1987,11 @@ input:focus + .modal-form__icon {
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   color: #212121;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__btn:hover, .portfolio__btn:focus {
+.portfolio__btn:hover,
+.portfolio__btn:focus {
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
@@ -1954,7 +2007,7 @@ input:focus + .modal-form__icon {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   outline: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -2013,7 +2066,8 @@ input:focus + .modal-form__icon {
   display: block;
   height: 100%;
 }
-.portfolio__link:hover, .portfolio__link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 @media screen and (min-width: 1200px) {
@@ -2021,7 +2075,8 @@ input:focus + .modal-form__icon {
     display: inline-block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .portfolio__link:hover, .portfolio__link:focus {
+  .portfolio__link:hover,
+  .portfolio__link:focus {
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -2046,7 +2101,7 @@ input:focus + .modal-form__icon {
   height: 100%;
   padding: 75px 25px;
   opacity: 0;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2063,7 +2118,8 @@ input:focus + .modal-form__icon {
     font-size: 14px;
   }
 }
-.portfolio__link:hover .portfolio__photo-text, .portfolio__link:focus .portfolio__photo-text {
+.portfolio__link:hover .portfolio__photo-text,
+.portfolio__link:focus .portfolio__photo-text {
   transform: translateY(0);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   opacity: 1;
@@ -2089,7 +2145,8 @@ input:focus + .modal-form__icon {
     color: #ffffff;
     background-color: rgba(33, 150, 243, 0.9);
   }
-  .portfolio__link:hover .portfolio__photo-text, .portfolio__link:focus .portfolio__photo-text {
+  .portfolio__link:hover .portfolio__photo-text,
+  .portfolio__link:focus .portfolio__photo-text {
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -2103,7 +2160,7 @@ input:focus + .modal-form__icon {
 
 .portfolio__title {
   margin-bottom: 4px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2113,11 +2170,11 @@ input:focus + .modal-form__icon {
 }
 
 .portfolio__text {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
