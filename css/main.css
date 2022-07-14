@@ -293,6 +293,9 @@ img {
   }
 }
 
+.modal {
+  overflow: scroll;
+}
 @media screen and (max-width: 479px) {
   .modal {
     position: absolute;
@@ -460,8 +463,8 @@ input:focus + .modal-form__icon {
 @media screen and (min-width: 1200px) {
   .modal-form__icon {
     position: absolute;
-    left: 12px;
     top: 50%;
+    left: 12px;
     transform: translateY(-50%);
     fill: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -511,7 +514,7 @@ input:focus + .modal-form__icon {
 .modal-form__box {
   position: relative;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   padding-left: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -552,46 +555,24 @@ input:focus + .modal-form__icon {
   position: absolute;
   top: 50%;
   left: 0;
-  height: 15px;
   opacity: 0;
   transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__input-checkbox:checked ~ .modal-form__checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   opacity: 1;
 }
-.modal-form__input-checkbox:hover ~ .modal-form__checkbox {
+.modal-form__input-checkbox:hover ~ .modal-form__checkbox, .modal-form__input-checkbox:focus ~ .modal-form__checkbox {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-@media screen and (min-width: 1200px) {
-  .modal-form__checkbox {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* display: none; */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /* margin-right: 7px; */
-  }
-  .modal-form__input-checkbox:checked ~ .modal-form__checkbox {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /* margin-right: 7px; */
-    border: none;
-  }
-  .modal-form__input-checkbox:focus ~ .modal-form__checkbox {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 }
 
 .modal-form__checkbox--none {
@@ -600,39 +581,22 @@ input:focus + .modal-form__icon {
   left: 0;
   transform: translateY(-50%);
   opacity: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__input-checkbox:checked ~ .modal-form__checkbox--none {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   opacity: 0;
 }
-.modal-form__input-checkbox:hover ~ .modal-form__checkbox--none {
+.modal-form__input-checkbox:hover ~ .modal-form__checkbox--none, .modal-form__input-checkbox:focus ~ .modal-form__checkbox--none {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-@media screen and (min-width: 1200px) {
-  .modal-form__checkbox--none {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /* margin-right: 7px; */
-    border: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-form__input-checkbox:checked ~ .modal-form__checkbox--none {
-    /* display: none; */
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-  .modal-form__input-checkbox:focus ~ .modal-form__checkbox--none {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 }
 
 .modal-form__link {
@@ -744,6 +708,7 @@ input:focus + .modal-form__icon {
   border: none;
   outline: none;
   background-color: transparent;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__btn.is-open .header__icon--close {
   opacity: 1;
@@ -768,6 +733,7 @@ input:focus + .modal-form__icon {
 
 .header__icon--open,
 .header__icon--close {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #212121;
 }
 
@@ -790,7 +756,6 @@ input:focus + .modal-form__icon {
 }
 
 .mobile__lists {
-  border-top: 1px solid #ececec;
   margin-bottom: 300px;
 }
 @media screen and (max-width: 390px) {
@@ -812,13 +777,15 @@ input:focus + .modal-form__icon {
   line-height: 47px;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile__link.current {
   color: #2196f3;
 }
 
-.mobile__link:hover {
+.mobile__link:hover,
+.mobile__link:focus {
   border-bottom: 4px solid #2196f3;
   color: #2196f3;
   border-radius: 2px;
@@ -841,6 +808,7 @@ input:focus + .modal-form__icon {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-contact__link:hover, .mobile-contact__link:focus {
   font-weight: 500;
