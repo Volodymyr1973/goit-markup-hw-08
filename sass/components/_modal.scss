@@ -23,12 +23,12 @@
 }
 
 .modal {
-    @media screen and(max-width: 479px) {
+  @media screen and(max-width: 479px) {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 90%;
-    // height: 615px;
+
     padding: 40px;
     z-index: 20;
 
@@ -51,7 +51,7 @@
     top: 50%;
     left: 50%;
     width: 450px;
-    height: 610px;
+
     padding: 40px;
     z-index: 20;
 
@@ -65,7 +65,6 @@
 
   @include desktop {
     width: 528px;
-    // height: 581px;
 
     opacity: 1;
     transform: scale(1) translate(-50%, -50%);
