@@ -1,3 +1,7 @@
+.no-scroll {
+  overflow: hidden;
+}
+
 // Кнопка выпадающего меню мобильного в хедере
 // .header__btn
 
@@ -62,6 +66,8 @@
   top: 0;
   width: 100vw;
   height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 5;
   padding: 48px 40px;
   background-color: #ffffff;
@@ -70,18 +76,18 @@
 }
 
 .mobile.is-open {
-  display: block;
+  display: flex;
 }
 
 // .mobile__lists
 
 .mobile__lists {
   // border-top: 1px solid #ececec;
-  margin-bottom: 300px;
+  // margin-bottom: 300px;
 
-  @media screen and(max-width: 390px) {
-    margin-bottom: 200px;
-  }
+  // @media screen and(max-width: 390px) {
+  //   margin-bottom: 200px;
+  // }
 }
 
 // .mobile__item
@@ -117,6 +123,9 @@
 
 // Список контактов мобильного меню
 
+.mobile__box {
+}
+
 // .mobile-contact__item
 
 .mobile-contact__item {
@@ -151,11 +160,11 @@
   }
 
   @media screen and (max-width: 390px) {
-    font-size: 20px;
+    font-size: 22px;
 
     &:hover,
     &:focus {
-      font-size: 25px;
+      font-size: 26px;
     }
   }
 }
@@ -176,19 +185,11 @@
   margin-bottom: 5px;
   &:not(:first-child) {
     padding-left: 10px;
-
-    @media screen and (max-width: 390px) {
-      padding-left: 5px;
-    }
   }
 
   &:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-
-    @media screen and (max-width: 390px) {
-      padding-right: 5px;
-    }
   }
 }
 
@@ -204,10 +205,6 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-
-  @media screen and (max-width: 390px) {
-    font-size: 14px;
-  }
 }
 
 .mobile-social__item:hover,

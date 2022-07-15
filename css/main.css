@@ -293,16 +293,12 @@ img {
   }
 }
 
-.modal {
-  overflow: scroll;
-}
 @media screen and (max-width: 479px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 90%;
-    height: 615px;
     padding: 40px;
     z-index: 20;
     border-radius: 4px;
@@ -336,7 +332,6 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
     opacity: 1;
     transform: scale(1) translate(-50%, -50%);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -651,7 +646,7 @@ input:focus + .modal-form__icon {
   align-items: center;
   text-align: center;
   padding: 10px 55px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   outline: none;
   font-family: "Roboto";
   font-style: normal;
@@ -700,6 +695,10 @@ input:focus + .modal-form__icon {
   fill: #2196f3;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header__btn {
   position: absolute;
   top: 10px;
@@ -744,6 +743,8 @@ input:focus + .modal-form__icon {
   top: 0;
   width: 100vw;
   height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 5;
   padding: 48px 40px;
   background-color: #ffffff;
@@ -752,16 +753,7 @@ input:focus + .modal-form__icon {
 }
 
 .mobile.is-open {
-  display: block;
-}
-
-.mobile__lists {
-  margin-bottom: 300px;
-}
-@media screen and (max-width: 390px) {
-  .mobile__lists {
-    margin-bottom: 200px;
-  }
+  display: flex;
 }
 
 .mobile__item:not(last-child) {
@@ -819,10 +811,10 @@ input:focus + .modal-form__icon {
 }
 @media screen and (max-width: 390px) {
   .mobile-contact__link {
-    font-size: 20px;
+    font-size: 22px;
   }
   .mobile-contact__link:hover, .mobile-contact__link:focus {
-    font-size: 25px;
+    font-size: 26px;
   }
 }
 
@@ -838,19 +830,9 @@ input:focus + .modal-form__icon {
 .mobile-social__item:not(:first-child) {
   padding-left: 10px;
 }
-@media screen and (max-width: 390px) {
-  .mobile-social__item:not(:first-child) {
-    padding-left: 5px;
-  }
-}
 .mobile-social__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-@media screen and (max-width: 390px) {
-  .mobile-social__item:not(:last-child) {
-    padding-right: 5px;
-  }
 }
 
 .mobile-social__link {
@@ -862,11 +844,6 @@ input:focus + .modal-form__icon {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-@media screen and (max-width: 390px) {
-  .mobile-social__link {
-    font-size: 14px;
-  }
 }
 
 .mobile-social__item:hover,
@@ -1082,7 +1059,7 @@ input:focus + .modal-form__icon {
 
 @media screen and (min-width: 1200px) {
   .header-contact__item:not(:first-child) {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -1152,9 +1129,6 @@ input:focus + .modal-form__icon {
   }
 }
 
-.hero {
-  margin: 0 auto;
-}
 @media screen and (max-width: 479px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero480.jpg);
@@ -1201,6 +1175,7 @@ input:focus + .modal-form__icon {
   .hero {
     max-width: 1600px;
     height: 600px;
+    margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1200.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1553,6 +1528,7 @@ input:focus + .modal-form__icon {
 
 .team-card__icon {
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client__title {
