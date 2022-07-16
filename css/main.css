@@ -825,8 +825,23 @@ input:focus + .modal-form__icon {
 
 .mobile-social__item {
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 5px;
+}
+
+.mobile-social__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  right: -21px;
+  bottom: 50%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.mobile-social__item.mobile-social__item--facebook {
+  width: 85px;
 }
 
 .mobile-social__link {
@@ -841,17 +856,6 @@ input:focus + .modal-form__icon {
 }
 .mobile-social__link:hover, .mobile-social__link:focus {
   text-decoration: underline;
-}
-
-.mobile-social__line::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 0px;
-  right: -16px;
-  bottom: 11px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
 }
 
 .header {
