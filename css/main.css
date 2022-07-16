@@ -824,14 +824,9 @@ input:focus + .modal-form__icon {
 }
 
 .mobile-social__item {
+  position: relative;
+  margin-right: 10px;
   margin-bottom: 5px;
-}
-.mobile-social__item:not(:first-child) {
-  padding-left: 10px;
-}
-.mobile-social__item:not(:last-child) {
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-social__link {
@@ -843,10 +838,20 @@ input:focus + .modal-form__icon {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-social__link:hover, .mobile-social__link:focus {
   text-decoration: underline;
+}
+
+.mobile-social__line::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  right: -16px;
+  bottom: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .header {
